@@ -38,3 +38,14 @@ Once the file is downloaded and the hash matches, the usual Duro/Piksi upgrade
 process takes place.  The device will reboot once the upgrade completes and the
 upgrade server should receive another request within 30s (which should show the
 new version in the `Current-Version` header).
+
+## Running the server
+
+Run the following to run the server (assuming Maven and Java are installed):
+
+    ./mvnw spring-boot:run
+
+Or, to build the jar file and run that:
+
+    ./mvnw install
+    java -jar target/piksi_ota-0.0.1-SNAPSHOT.jar
