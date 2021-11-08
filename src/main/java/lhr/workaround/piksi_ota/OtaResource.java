@@ -7,7 +7,7 @@ public class OtaResource {
     private final String sha256;
 
     public OtaResource() {
-        this.url = "https://www.swiftnav.com/resource-uploads/Piksi%20Multi/v2.3.19/Firmware/PiksiMulti-v2.3.19.bin";
+        this.url = "https://www.swiftnav.com/resource-files/Piksi%20Multi/v2.3.19/Firmware/PiksiMulti-v2.3.19.bin";
         this.version = "v2.3.19";
         this.sha256 = "b3a70335971b5badb189a5b038bb785b18f5091642472244db6438398339f253";
     }
