@@ -11,6 +11,7 @@ the feature.  In order to enable it, the following sequence should be respected.
 
 - Configure `ota.enable` to false
 - Configure `ota.url` to the desired server
+  - For this example server the URL will be something like `http://192.168.0.11:8080/ota` where `192.168.0.11` is an IP address the Piksi can access
 - Confiugre `ota.enable` to true and with 30s the OTA client will reach out to the configured server
 
 The OTA client sends the following data to the server:
@@ -39,9 +40,19 @@ process takes place.  The device will reboot once the upgrade completes and the
 upgrade server should receive another request within 30s (which should show the
 new version in the `Current-Version` header).
 
+## Bootstrapping Maven
+
+To run the `./mvnw` command below you'll need to first bootstrap maven, this
+should only be need once:
+
+    mvn -N io.takari:maven:wrapper
+    
+For more info see https://stackoverflow.com/questions/50104172/could-not-find-or-load-main-class-org-apache-maven-wrapper-mavenwrappermain
+
 ## Running the server
 
-Run the following to run the server (assuming Maven and Java are installed):
+First see "Bootstrapping Maven".  Then, run the following to run the server
+(assuming Maven and Java are installed):
 
     ./mvnw spring-boot:run
 
@@ -49,3 +60,10 @@ Or, to build the jar file and run that:
 
     ./mvnw install
     java -jar target/piksi_ota-0.0.1-SNAPSHOT.jar
+    
+## Configuring the firmware that's sent
+
+The firmware that's sent is hardcoded for now, to update what firmware the
+device will upgrade to, see:
+
+  - https://github.com/swift-nav/piksi_multi_ota/blob/master/src/main/java/lhr/workaround/piksi_ota/OtaResource.java#L10
