@@ -1,7 +1,7 @@
 # Example Piksi OTA Server
 
-*WARNING*: The Piksi Multi OTA server is an unsupported feature, the code and
-instructions within this repository are for informational purposes only.
+**WARNING**: *The Piksi Multi OTA server is an unsupported feature, the code and
+instructions within this repository are for informational purposes only.*
 
 ## Building and Running
 
