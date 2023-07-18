@@ -9,8 +9,8 @@ instructions within this repository are for informational purposes only.*
 
 This example server uses the Java language and the Maven build tool.  To install these on Ubuntu Linux, run the following commands:
 
-    apt install default-jdk
-    apt install maven
+    sudo apt install default-jdk
+    sudo apt install maven
 
 ### Bootstrapping Maven
 
