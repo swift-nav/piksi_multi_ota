@@ -1,4 +1,4 @@
-# Example Piksi OTA Server
+# Example Piksi OTA Server [![Java CI](https://github.com/swift-nav/piksi_multi_ota/actions/workflows/ci.yaml/badge.svg)](https://github.com/swift-nav/piksi_multi_ota/actions/workflows/ci.yaml)
 
 **WARNING**: *The Piksi Multi OTA server is an unsupported feature, the code and
 instructions within this repository are for informational purposes only.*
