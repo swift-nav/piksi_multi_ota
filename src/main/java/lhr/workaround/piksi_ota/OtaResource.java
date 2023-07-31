@@ -19,9 +19,9 @@ public class OtaResource {
     private final String sha256;
 
     public OtaResource() {
-        this.url = "https://www.swiftnav.com/resource-files/Piksi%20Multi/v2.3.19/Firmware/PiksiMulti-v2.3.19.bin";
-        this.version = "v2.3.19";
-        this.sha256 = "b3a70335971b5badb189a5b038bb785b18f5091642472244db6438398339f253";
+        this.url = "http://downloads.swiftnav.com/piksi_multi/firmware/2023-05-23-v3.0.17/PiksiMulti-v3.0.17.bin";
+        this.version = "v3.0.17";
+        this.sha256 = "8bcd745899710c05caf5ecede73bb6ec1d77c9e4bc8c20e2b86f7137055821f6";
     }
 
     public String getUrl() {
